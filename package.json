@@ -1,9 +1,0 @@
-{
-  "name": "dawa-inventory",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "start": "cd backend && node src/index.js",
-    "deploy": "npm run build && npm start"
-  }
-}
