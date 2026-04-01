@@ -35,8 +35,8 @@ app.use("/api/suppliers", supplierRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 
-// Serve frontend
-const distPath = path.join(__dirname, "../../../frontend/dist");
+// Serve frontend - path from repo root
+const distPath = path.join(__dirname, "../../frontend/dist");
 app.use(express.static(distPath));
 app.get("*", (req, res) => {
   res.sendFile(path.join(distPath, "index.html"));
